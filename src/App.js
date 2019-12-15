@@ -16,8 +16,7 @@ class App extends Component {
     })
   }
 
-  // TODO 1 - Write the logic for adding the item to the list
-  AddTodoList = () => {
+  addTodoList = () => {
     
   }
 
@@ -27,9 +26,9 @@ class App extends Component {
         <div className="Card">
           <h3>Shopping list for Today</h3>
           <div className="TextFieldWrapper">
-            <input onChange={this.updateCurrentTask} className="TextField" type="text" placeholder="enter the task here.." 
+            <input onChange={this.updateCurrentTask} className="TextField" type="text" placeholder="enter the item here.." 
               value={this.state.currentText ? this.state.currentText : ''} data-test="text-box"/>
-            <input type="button" value="Add" className="AddButton" data-test="add-button" />
+            <input onClick={this.addTodoList} type="button" value="Add" className="AddButton" data-test="add-button" />
           </div>
           <div className="TodoList">
             <ul>

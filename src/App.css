@@ -42,6 +42,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.TodoList {
+  max-height: 200px;
+  overflow: auto;
+}
+
 .TodoList > ul {
   text-align: left;
   padding: 0 1rem;
